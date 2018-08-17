@@ -12,7 +12,10 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['egSpec.js'],
+  suites: {
+    //test1 : 'egSpec.js',
+    test2 : 'upwork.spec.js'
+  },
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
