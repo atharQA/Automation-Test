@@ -1,0 +1,148 @@
+{
+	"id": "8a1fafe1-7e2b-4011-8c38-092e8469e1c6",
+	"name": "Zycus-Customer Onboarding Assignment",
+	"allTests": [],
+	"timestamp": "2018-12-09T16:28:02.581Z",
+	"collection_id": "1375d1de-9f0c-44ca-af59-cee30238add8",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "c6b4b543-e264-4a40-8b53-fa620abcdb64",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "1375d1de-9f0c-44ca-af59-cee30238add8",
+		"name": "Zycus-Customer Onboarding Assignment",
+		"description": "Customer Onboarding Assignment",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"f1948244-6548-400d-aa05-ea96992ec695",
+			"74af362c-27ae-44c1-bc78-4d44eace3053"
+		],
+		"folders_order": [],
+		"owner": "5721832",
+		"permissions": {},
+		"favorite": false,
+		"shared": true,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "http://localhost:3000/posts/",
+			"id": "f1948244-6548-400d-aa05-ea96992ec695",
+			"url": "http://localhost:3000/posts/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"33"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "33",
+			"totalRequestTime": "33",
+			"iterationResults": {}
+		},
+		{
+			"name": "http://localhost:3000/posts/15",
+			"id": "74af362c-27ae-44c1-bc78-4d44eace3053",
+			"url": "http://localhost:3000/posts/15",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code should be 200",
+				"status": "pass",
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"15"
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Body matches string": true
+				}
+			],
+			"time": "15",
+			"totalRequestTime": "15",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 2,
+	"totalFail": 0,
+	"totalTime": 48,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "http://localhost:3000/posts/",
+			"id": "f1948244-6548-400d-aa05-ea96992ec695",
+			"url": "http://localhost:3000/posts/",
+			"time": "2018-12-09T16:28:02.581Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "http://localhost:3000/posts/15",
+			"id": "74af362c-27ae-44c1-bc78-4d44eace3053",
+			"url": "http://localhost:3000/posts/15",
+			"time": "2018-12-09T16:28:02.581Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
