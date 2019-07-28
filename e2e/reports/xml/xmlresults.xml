@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="15.463">
+ <testsuite name="REGRESSION SAMPLE TEST" timestamp="2019-07-22T22:53:59" hostname="localhost" time="15.463" errors="0" tests="2" skipped="0" disabled="0" failures="1">
+  <testcase classname="REGRESSION SAMPLE TEST" name="Title of the page" time="14.991">
+   <failure type="toEqual" message="Expected &apos;Gmail&apos; to equal &apos;Gmail 123&apos;."><![CDATA[Error: Failed expectation
+    at UserContext.it (D:\BACKUP All\sample project\firstProtractorTest\e2e\tests\regression\sampleTestCase.spec.js:8:38)
+    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="REGRESSION SAMPLE TEST" name="DIFFERENT EXPECT COND WITH MESSAGE:::" time="0.468" />
+ </testsuite>
+</testsuites>
