@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="1" tests="2" time="15.463">
- <testsuite name="REGRESSION SAMPLE TEST" timestamp="2019-07-22T22:53:59" hostname="localhost" time="15.463" errors="0" tests="2" skipped="0" disabled="0" failures="1">
-  <testcase classname="REGRESSION SAMPLE TEST" name="Title of the page" time="14.991">
-   <failure type="toEqual" message="Expected &apos;Gmail&apos; to equal &apos;Gmail 123&apos;."><![CDATA[Error: Failed expectation
-    at UserContext.it (D:\BACKUP All\sample project\firstProtractorTest\e2e\tests\regression\sampleTestCase.spec.js:8:38)
-    at process._tickCallback (internal/process/next_tick.js:68:7)]]>
-   </failure>
+<testsuites disabled="0" errors="0" failures="0" tests="8" time="7.798">
+ <testsuite name="API SAMPLE TEST" timestamp="2019-09-03T20:36:01" hostname="localhost" time="7.798" errors="0" tests="8" skipped="6" disabled="0" failures="0">
+  <testcase classname="API SAMPLE TEST" name="Title of the page" time="7.766" />
+  <testcase classname="API SAMPLE TEST" name="API: GET CALL" time="0.002">
+   <skipped message="Temporarily disabled with xit" />
   </testcase>
-  <testcase classname="REGRESSION SAMPLE TEST" name="DIFFERENT EXPECT COND WITH MESSAGE:::" time="0.468" />
+  <testcase classname="API SAMPLE TEST" name="API: POST CALL" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="API SAMPLE TEST" name="API: PAYLOAD VALIDATION" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="API SAMPLE TEST" name="API: GET CALL 2" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="API SAMPLE TEST" name="API: PUT CALL" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="API SAMPLE TEST" name="DATE HELPER" time="0">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="API SAMPLE TEST" name="DATE HELPER PART-2" time="0.026" />
  </testsuite>
 </testsuites>

@@ -45,7 +45,10 @@ exports.config = {
                 browser.driver.get(browser.params.url.prod);
             }
         } else {
-            browser.driver.get(browser.params.url.qa);
+            // browser.driver.get(browser.params.url.qa);
+            browser.driver.get('https://angular.io/docs').then( function () {
+            //do something
+            });
         }
         //In order to obtain results in xml file you can use jasmine-reporters module: 
         jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
@@ -106,11 +109,23 @@ exports.config = {
         });
     },
 
+    //
+    // suites: {
+    //     // smoke: ['tests/smoke/sampleTestCase.spec.js'],
+    //     //
+    //     // regression: ['tests/regression/sampleTestCase.spec.js'],
+    //
+    //     api: ['tests/api/api.spec.js']
+    //
+    // }
 
-    suites: {
-        smoke: ['tests/smoke/sampleTestCase.spec.js'],
 
-        regression: ['tests/regression/sampleTestCase.spec.js']
-
+    suites:{
+        api : 'tests/api/api.spec.js'
     }
-}
+
+    // specs:[
+    //     'tests/api/api.spec.js'
+    //
+    // ]
+};

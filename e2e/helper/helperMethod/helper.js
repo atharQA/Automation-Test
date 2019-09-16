@@ -88,6 +88,18 @@ var Helper = function () {
     this.switchToAngularPage = function () {
         browser.ignoreSynchronization = false;
     };
+
+    //element : can be css, id it may not contain attribute as tooltip
+    this.getTooltipMessage = async function (element) {
+        var tooltipMsg = await element.getAttribute("textContent");
+        return tooltipMsg;
+    }
+
+    //element : should have attributes as tooltip
+    this.getTooltipMessage2 = async function (element) {
+        var tooltipMsg = await element.getAttribute("tooltip");
+        return tooltipMsg;
+    }
 }
 
 module.exports = new Helper();
