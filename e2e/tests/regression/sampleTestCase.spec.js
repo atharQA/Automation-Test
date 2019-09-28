@@ -12,18 +12,16 @@ describe('REGRESSION SAMPLE TEST', () => {
 
     });
 
-    xit('Navigate to the page and verfiy the page title', async () => {
+    it('Navigate to the page and verfiy the page title', async () => {
         browser.driver.get('https://angular.io/docs');
         const requiredTitles = await browser.driver.getTitle();
         console.log('TITLE :', requiredTitles)
         await expect(requiredTitles).toEqual('Angular - Introduction to the Angular Docs');
     });
 
-    xit('PROCESS 1: Expect all the Labels in the page must be same as given labels in UI', async () => {
+    it('PROCESS 1: Expect all the Labels in the page must be same as given labels in UI', async () => {
         var headerList = $$("mat-toolbar aio-top-menu ul li");
         // var headerList = element.all(by.css("mat-toolbar aio-top-menu ul li"));
-
-
         const res = await headerList.getText();
         console.log('TOTAL HEADER LIST = ', res);
 
@@ -31,7 +29,7 @@ describe('REGRESSION SAMPLE TEST', () => {
     });
 
 
-    xit('PROCESS 2: Expect all the Labels in the page must be same as given labels in UI', async () => {
+    it('PROCESS 2: Expect all the Labels in the page must be same as given labels in UI', async () => {
         var headerList = $$("mat-toolbar aio-top-menu ul li");
         const res = await headerList.getText();
         console.log('headerList.length = ', res.length);
@@ -46,7 +44,7 @@ describe('REGRESSION SAMPLE TEST', () => {
         await expect(totalHeaderName).toEqual(['FEATURES', 'DOCS', 'RESOURCES', 'EVENTS', 'BLOG']);
     });
 
-    xit('PROCESS 3: With Fuction call: HEADERS/LIST VALIDATION', async()=>{
+    it('PROCESS 3: With Fuction call: HEADERS/LIST VALIDATION', async()=>{
         const headers =  await homePage.getHomePageHeader();
         console.log('Headers  = ', headers);
         
@@ -54,6 +52,4 @@ describe('REGRESSION SAMPLE TEST', () => {
 
     });
    
-
-
 });
