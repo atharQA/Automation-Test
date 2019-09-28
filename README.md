@@ -8,3 +8,5 @@ Automation Test case on API using Axios and lots of Helper functions using JavaS
 Automation Test case on Cucumber with Protractor & Javascript 
 ---------------------------------------------------------------------------
 Conf settings for Browser Stack for different browsers & devices
+---------------------------------------------------------------------------
+Postgres Connection : (npm): With node.js & protractor framework
