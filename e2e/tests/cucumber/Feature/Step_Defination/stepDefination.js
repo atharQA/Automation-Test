@@ -31,3 +31,17 @@ Then('Verify the sum of the array input', async () => {
     expect(sum).to.be.equal(150);
 });
 
+const sum60 =0;
+
+Given('Run unit test', function(){
+console.log("RUN A UNIT TEST");
+});
+
+When('Sum of 20 + 40', function(){
+    sum60 = 20 + 40;
+});
+
+Then('Results should be 60', function(){
+    console.log("Results should be 60 : ", sum60);
+});
+
